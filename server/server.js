@@ -10,10 +10,11 @@ const app = express();
 
 //Connect to mongodb
 mongoose
-.connect("mongodb+srv://santosh2691:sandy008@lyricalgraphql-3cx5d.mongodb.net/test?retryWrites=true&w=majority",{
+.connect("mongodb+srv://username:password@lyricalgraphql-3cx5d.mongodb.net/test?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
+
 .then(()=>console.log("db connected ..."))
 .catch(()=>console.log("connection error...",err));
 
